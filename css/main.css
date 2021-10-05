@@ -1,0 +1,56 @@
+/* ダークモード対応 */
+:root {
+  --main-text: #333;
+  --main-background: #fcfcfc;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  --link: #00e;
+  --hover: #e00;
+  --theme-color: #ee195e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text: #ccc;
+    --main-background: #333;
+    --shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    --link: #ff1;
+    --hover: #1ff;
+  }
+}
+
+/* 全体 */
+body {
+  font-family: sans-serif;
+  margin: 10px;
+  color: var(--main-text);
+  background-color: var(--main-background);
+}
+
+/* 条件入力 */
+.input_file {
+  cursor: pointer;
+}
+.input_number {
+  cursor: pointer;
+  width: 80px;
+  font-size: 16px;
+  margin: 3px 5px 3px 5px;
+  padding: 3px 5px;
+  font-weight: bold;
+  color: var(--main-text);
+  background-color: var(--main-background);
+  border: solid 1px var(--theme-color);
+  border-radius: 5px;
+}
+.input_number:hover {
+  box-shadow: var(--shadow);
+}
+
+/* 結果出力 */
+#canvas {
+  padding: 3px 5px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  /* スマートフォン */
+}

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <meta name="description" content="Identify edges in an image online.">
+  <title>Edge Detector</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</head>
+
+<body>
+  <div id="file"></div>
+  Width<input type="number" class="input_number" id="width_number" value="1024" />px　×　
+  Height<input type="number" class="input_number" id="height_number" value="2048" />px
+  <br />
+  <div id="canvas"></div>
+</body>
+
+</html>
